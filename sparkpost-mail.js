@@ -5,7 +5,13 @@
 
 export var Sparkpost = {
 	config: function(options) {
-		
+		var defaultOptions = {
+			host: 'smtp.sparkpostmail.com',
+			port: '587',
+			username: 'SMTP_Injection',
+			password: null
+		};
+
 	},
 	send: function(options) {
 		Email.send(options);

@@ -13,6 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.3.2.4');
   api.use('ecmascript');
+   api.use('email','server');
   api.mainModule('sparkpost-mail.js', 'server');
 });
 
