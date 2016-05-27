@@ -22,6 +22,9 @@ export var Sparkpost = {
 		else {
 			defaultOptions.password = options;
 		}
+
+		if (defaultOptions.password.trim().length == 0 || defaultOptions.password == null)
+			throw new Meteor.Error('password-required', 'Password(api key) required to send email');
 	},
 	send: function(options) {
 		Email.send(options);
