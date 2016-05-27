@@ -18,7 +18,7 @@ export var Sparkpost = {
 	},
 
 	config: function(options) {
-		if (Array.isArray(options)) {
+		if (typeof options === 'object') {
 			// merge options with default options
 			for (var key in options) {
 		        if (options.hasOwnProperty(key))
@@ -29,7 +29,7 @@ export var Sparkpost = {
 			this._options.password = options;
 		}
 
-		if (this._options.password.trim().length === 0 || this._options.password === null)
+		if (this._options.password === null || this._options.password.trim().length === 0)
 			throw new Meteor.Error('password-required', 'Password(api key) required to send email');
 
 		process.env.MAIL_URL = 'smtp://' + this._options.username + ':' + this._options.password + '@' + this._options.host + ':' + this._options.port + '/';
