@@ -2,7 +2,7 @@
 #### Send emails using Sparkpost as the SMTP server
 
 ## What is Sparkpost?
-tl;dr - Sparkpost sends up to 100k emails for you at no cost. It's easy to get started.
+tl;dr - Sparkpost sends up to emails for you. It's easy to get started.
 
 SparkPost, by Message Systems, offers companies of all sizes the same leading email platform trusted by the world’s largest email senders, without requiring them to install and manage their own email systems. It is available in two editions to meet the diverse email needs of companies of any size. SparkPost.com allows organizations to easily integrate pay-as-you-go email delivery into their web and mobile applications in minutes using a credit card.  -- Sparkpost
 
