@@ -2,9 +2,9 @@
 #### Send emails using Sparkpost as the SMTP server
 
 ## What is Sparkpost?
-tl;dr - Sparkpost sends up to emails for you. It's easy to get started.
+tl;dr - Sparkpost is a cloud email delivery service. It's easy to get started with either SMTP or their REST API.
 
-SparkPost, by Message Systems, offers companies of all sizes the same leading email platform trusted by the world’s largest email senders, without requiring them to install and manage their own email systems. It is available in two editions to meet the diverse email needs of companies of any size. SparkPost.com allows organizations to easily integrate pay-as-you-go email delivery into their web and mobile applications in minutes using a credit card.  -- Sparkpost
+SparkPost is the world’s #1 email infrastructure provider and the most performant email delivery service available. Our customers send over 3 trillion messages a year, more than 25 percent of the world’s non-spam email. Several SparkPost customers—including the largest social networks—send over a billion emails a day, making us the fastest-growing email delivery service provider on the market.
 
 ## Get Started with Sparkpost
 1. [Sign up](https://app.sparkpost.com/sign-up) for a sparkpost account
