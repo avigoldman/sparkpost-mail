@@ -1,13 +1,13 @@
-# Sparkpost for Meteor
-#### Send emails using Sparkpost as the SMTP server
+# SparkPost for Meteor
+#### Send emails using SparkPost as the SMTP server
 
-## What is Sparkpost?
-tl;dr - Sparkpost is a cloud email delivery service. It's easy to get started with either SMTP or their REST API.
+## What is SparkPost?
+tl;dr - SparkPost is a cloud email delivery service. It's easy to get started with either SMTP or their REST API.
 
 SparkPost is the world’s #1 email infrastructure provider and the most performant email delivery service available. Our customers send over 3 trillion messages a year, more than 25 percent of the world’s non-spam email. Several SparkPost customers—including the largest social networks—send over a billion emails a day, making us the fastest-growing email delivery service provider on the market.
 
-## Get Started with Sparkpost
-1. [Sign up](https://app.sparkpost.com/sign-up) for a sparkpost account
+## Get Started with SparkPost
+1. [Sign up](https://app.sparkpost.com/sign-up) for a SparkPost account
 2. [Add](https://support.sparkpost.com/customer/en/portal/articles/1933318-creating-sending-domains) and [verify](https://support.sparkpost.com/customer/portal/articles/1933360-verify-sending-domains) a sending domain
 3. [Configure SMTP](https://app.sparkpost.com/onboarding/smtp) and save the password
 
@@ -39,7 +39,7 @@ Meteor.startup(() => {
 
 # Documentation
 ### config([options])
-* `password` An Sparkpost API Key that has SMTP permissions 
+* `password` An SparkPost API Key that has SMTP permissions 
 * `username` Username for SMTP account - defaults to `SMTP_Injection`
 * `port` Port for SMTP - defaults to `587`
 * `host` Host for SMTP - defaults to `smtp.sparkpostmail.com`
