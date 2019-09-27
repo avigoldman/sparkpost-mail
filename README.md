@@ -4,7 +4,7 @@
 ## What is SparkPost?
 tl;dr - SparkPost is a cloud email delivery service. It's easy to get started with either SMTP or their REST API.
 
-SparkPost is the world’s #1 email infrastructure provider and the most performant email delivery service available. Our customers send over 3 trillion messages a year, more than 25 percent of the world’s non-spam email. Several SparkPost customers—including the largest social networks—send over a billion emails a day, making us the fastest-growing email delivery service provider on the market.
+SparkPost is the world’s #1 email delivery and analytics provider. Our customers send over 3 trillion messages a year, 37% of B2C and B2B email.
 
 ## Get Started with SparkPost
 1. [Sign up](https://app.sparkpost.com/sign-up) for a SparkPost account
@@ -46,6 +46,7 @@ Meteor.startup(() => {
 * `from` Sets default sending email if none is specified in the `send` function
 * `subject` Sets default subject if none is specified in the `send` function
 * `headers` Sets default headers if none are specified in the `send` function
+* `secure` Boolean to set the connection to `smtps` or `smtp`. Defaults to `false`
 
 ### send([options])
 ##### This is a wrapper function that fills in any defaults specified during configuration before passing the options off to the `Email.send` function.
