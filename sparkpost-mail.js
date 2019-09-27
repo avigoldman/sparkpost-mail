@@ -10,6 +10,7 @@ export var Sparkpost = {
 		port: '587',
 		username: 'SMTP_Injection',
 		password: null,
+		secure: false,
 
 		// optional to make sending easier
 		from: null,
@@ -32,7 +33,7 @@ export var Sparkpost = {
 		if (this._options.password === null || this._options.password.trim().length === 0)
 			throw new Meteor.Error('password-required', 'Password(api key) required to send email');
 
-		process.env.MAIL_URL = 'smtp://' + this._options.username + ':' + this._options.password + '@' + this._options.host + ':' + this._options.port + '/';
+		process.env.MAIL_URL = (this._options.secure ? 'smtps' : 'smtp') + '://' + this._options.username + ':' + this._options.password + '@' + this._options.host + ':' + this._options.port + '/';
 	},
 
 	send: function(options) {
